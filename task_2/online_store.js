@@ -34,7 +34,7 @@ console.log("Состав корзины после удаления товар�
 productRemoval(4);
 
 console.log("Общее количество и стоимость товаров в корзине");
-result();
+console.log(result());
 
 console.log("Очистка корзины");
 emptyTrash();
@@ -90,5 +90,5 @@ function result() {
         res.totalAmount += position.amount;
         res.totalSumm += catalog[position.good].price * position.amount;
     };
-    console.log(res);
+    return res;
 };
